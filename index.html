@@ -4,17 +4,26 @@
         
         <link rel="stylesheet" href="css/styles.css">
         <title>To do List</title>
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4697/4697260.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     </head>
     <body>
-        <div id="newTask" class="header">
-            <h3>To do list by Nora Aguirre</h3>
-            <input type="text" name="newItem" id="newItem" placeholder="Do dishes">
-            <span onclick="newElement()" class="addBtn">Add</span>
+        <div class="main">
+            <div class="container">
+                <div id="newTask" class="header">
+                    <p>Write the task here</p>
+                    <input type="text" name="newItem" id="newItem" placeholder="Do dishes">
+                    <span onclick="newElement()" class="addBtn">Add</span>
+                </div>
+            </div>
+           <div class="container">
+                <ul id="taskList">
+                    <li class="checked">Do dishes</li>
+                    <li>Make homework</li>
+                </ul> 
+           </div>
         </div>
-        <ul id="taskList">
-            <li class="checked">Example 1</li>
-            <li>Example 2</li>
-        </ul>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/todolist.js"></script>
     </body>
-    </html>
+</html>
